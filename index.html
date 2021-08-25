@@ -1,0 +1,499 @@
+<!DOCTYPE html>
+<html lang="ru-RU">
+  <head>
+    <meta charset="utf-8">
+    <title>Главная страница</title><!--[if IE]>
+    <meta http-equiv="X-UA-Compatible" content="IE = edge"><![endif]-->
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <meta name="keywords" content="">
+    <link rel="stylesheet" type="text/css" href="./assets/css/styles.min.css"><!--[if lt IE 9]>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.3/html5shiv-printshiv.min.js"></script><![endif]-->
+  </head>
+  <body class="home-page debounce overflow-hidden">
+    <div class="loader">
+      <svg id="logo_white" width="200" height="200" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewbox="0 0 280 280" style="enable-background:new 0 0 280 280;" xml:space="preserve">
+        <style type="text/css">.st0{ fill:#000;}</style>
+        <g>
+          <g>
+            <path class="st0" d="M145.5,225.6c2.9-0.2,5.1,0.4,6.6,1.7s2.3,3.3,2.5,6l0.2,4.3c0.1,2.7-0.4,4.8-1.8,6.2        c-1.3,1.5-3.4,2.3-6.3,2.4l-2.7,0.1l0.7,12.5l-5.7,0.3l-1.8-33.2L145.5,225.6z M143,230.5l0.6,11.2l2.7-0.1c0.9,0,1.6-0.3,2.1-0.8        s0.7-1.3,0.6-2.5l-0.3-5c-0.1-1.2-0.4-2-0.9-2.4s-1.2-0.6-2.1-0.5L143,230.5z"></path>
+            <path class="st0" d="M169.4,229.6c-1.1-2.5-1.2-4.7-0.4-6.6c0.8-1.9,2.5-3.4,5.1-4.6c2.6-1.1,4.9-1.3,6.8-0.6        c1.9,0.7,3.5,2.3,4.5,4.8l6.9,15.9c1.1,2.5,1.2,4.7,0.4,6.6c-0.8,1.9-2.5,3.4-5.1,4.6c-2.6,1.1-4.9,1.3-6.8,0.6        c-1.9-0.7-3.5-2.3-4.5-4.8L169.4,229.6z M181.7,243.5c0.5,1.1,1.1,1.8,1.7,2c0.7,0.2,1.5,0.2,2.3-0.2s1.4-0.9,1.7-1.5        c0.3-0.7,0.2-1.5-0.3-2.7l-7.1-16.5c-0.5-1.1-1.1-1.8-1.7-2c-0.7-0.2-1.5-0.2-2.3,0.2s-1.4,0.9-1.7,1.5c-0.3,0.7-0.2,1.6,0.3,2.7        L181.7,243.5z"></path>
+            <path class="st0" d="M198.5,214c-1.8-2-2.7-4-2.7-6s1.1-4,3.2-5.9c2.1-1.9,4.1-2.8,6.1-2.8c2,0.1,3.9,1.1,5.8,3.1l0.7,0.8l-4,3.7        l-0.9-1c-0.8-0.9-1.6-1.3-2.3-1.3s-1.4,0.3-2.1,0.9c-0.7,0.6-1,1.3-1,2s0.4,1.5,1.2,2.4c0.8,0.8,1.7,1.4,2.7,1.6        c1,0.3,2.1,0.4,3.2,0.4c1.1,0,2.3,0,3.6-0.1c1.2-0.1,2.5-0.1,3.7,0s2.5,0.4,3.7,0.9s2.4,1.3,3.4,2.5c1.8,2,2.7,4,2.6,6        c-0.1,2-1.1,4-3.2,5.9c-2.1,1.9-4.1,2.9-6.2,2.8c-2-0.1-4-1.1-5.8-3.1l-1.4-1.5l4-3.7l1.6,1.7c0.8,0.9,1.6,1.3,2.3,1.3        s1.4-0.3,2.1-1c0.7-0.6,1-1.3,1.1-2s-0.3-1.5-1.1-2.4c-0.8-0.8-1.7-1.4-2.7-1.6c-1-0.3-2.1-0.4-3.2-0.4c-1.1,0-2.3,0-3.6,0.1        s-2.5,0.1-3.7,0s-2.5-0.4-3.7-0.9C200.8,216,199.6,215.2,198.5,214z"></path>
+            <path class="st0" d="M245.7,196.1l-2.6,5.1l-29.7-14.9l2.6-5.1l12.7,6.4l2.9-5.8l-12.7-6.4l2.6-5.2l29.7,14.9l-2.6,5.2l-12.7-6.4        l-2.9,5.8L245.7,196.1z"></path>
+            <path class="st0" d="M239.8,153.3l5,0.8l-0.9,5.5l-5-0.8L239.8,153.3z"></path>
+            <path class="st0" d="M240.9,129.3l-0.8-7.4l4.7-0.5l0.8,7.4l13.7-1.5l0.6,5.7l-33.1,3.6l-1.7-15.1l4.7-0.5l1,9.4L240.9,129.3z"></path>
+            <path class="st0" d="M237.3,87.5l-22.7,7.6l-3.8-7.1l29.4-15.6l2.6,4.8l-21.1,11.2l22.9-7.7l2.6,4.8l-18.8,14.8l20.8-11.1l2.4,4.4        l-29.4,15.6l-3.8-7.1L237.3,87.5z"></path>
+            <path class="st0" d="M202.6,51.4l2.8-3.4c1.7-2.1,3.6-3.2,5.7-3.4c2-0.2,4.1,0.6,6.3,2.5c2.2,1.8,3.3,3.7,3.5,5.8        c0.2,2-0.6,4.1-2.3,6.1l-11.1,13.2c-1.7,2.1-3.6,3.2-5.7,3.3c-2,0.2-4.1-0.6-6.3-2.5c-2.2-1.8-3.3-3.7-3.5-5.8        c-0.2-2,0.6-4.1,2.3-6.1l2.1-2.5l4.2,3.5l-2.3,2.7c-0.8,0.9-1.1,1.7-1,2.5c0.1,0.7,0.5,1.4,1.2,2s1.4,0.9,2.1,0.8        c0.7,0,1.5-0.5,2.3-1.4l11.6-13.8c0.8-0.9,1.1-1.7,1-2.5c-0.1-0.7-0.5-1.4-1.2-1.9c-0.7-0.6-1.4-0.9-2.1-0.9        c-0.7,0-1.5,0.5-2.2,1.4l-3.1,3.6L202.6,51.4z"></path>
+            <path class="st0" d="M174.5,44l-7.6-2.8l3.6-9.9c0.9-2.5,2.3-4.2,4.2-5.1c1.9-0.9,4.1-0.8,6.8,0.2s4.4,2.4,5.3,4.2        c0.9,1.9,0.8,4-0.1,6.6l-5.9,16.3c-0.9,2.5-2.3,4.2-4.2,5.1c-1.9,0.9-4.1,0.8-6.8-0.2c-2.6-1-4.4-2.4-5.3-4.2        c-0.9-1.8-0.8-4,0.1-6.6l1.1-3l5.1,1.9l-1.2,3.3c-0.4,1.1-0.4,2-0.1,2.7c0.3,0.6,0.9,1.1,1.8,1.4c0.9,0.3,1.6,0.3,2.3,0.1        c0.7-0.3,1.2-1,1.6-2.1l6.2-16.9c0.4-1.1,0.4-2,0.1-2.6c-0.3-0.6-0.9-1.1-1.8-1.4c-0.9-0.3-1.6-0.3-2.3-0.1        c-0.7,0.3-1.2,1-1.6,2.1l-2.1,5.8l2.5,0.9L174.5,44z"></path>
+            <path class="st0" d="M143.4,38.6l0.3-5l5.5,0.3l-0.3,5L143.4,38.6z"></path>
+            <path class="st0" d="M120,55.1c-2.9,0.7-5.2,0.6-6.8-0.3s-2.7-2.6-3.3-5.1l-0.3-1.2c-0.4-1.7-0.4-3.1-0.1-4.3s1-2.2,2.2-3.1        c-1.7-0.2-2.9-0.8-3.8-1.8s-1.6-2.4-2-4.1l-0.6-2.6c-0.6-2.5-0.3-4.6,0.8-6.2c1.1-1.6,3.1-2.8,5.9-3.5l8.8-2.1l7.7,32.4L120,55.1z        M118.6,36.6l-2.4-9.9l-3.2,0.8c-1,0.2-1.6,0.6-2,1.2s-0.4,1.5-0.1,2.7l0.7,2.8c0.4,1.5,0.9,2.5,1.6,2.9s1.7,0.5,3,0.2L118.6,36.6        z M121.7,49.8l-2-8.6l-2.2,0.5c-1.1,0.2-1.8,0.7-2.3,1.3s-0.6,1.6-0.3,2.9l0.4,1.8c0.3,1.2,0.7,2,1.3,2.4s1.4,0.5,2.4,0.3        L121.7,49.8z"></path>
+            <path class="st0" d="M70.6,41.6c0.2,0.1,0.4,0.3,0.5,0.4c0.2,0.1,0.3,0.3,0.5,0.5s0.4,0.5,0.7,0.8c0.3,0.4,0.6,0.8,1,1.4l2.9,4.3        c0.9,1.3,1.7,2,2.6,2.2c0.8,0.2,1.8-0.1,2.9-0.8l1.6-1.1l-7.6-11.2l4.8-3.2l18.6,27.6L92,67.4c-2.5,1.7-4.6,2.4-6.5,2.1        c-1.8-0.3-3.4-1.5-4.9-3.6l-1.5-2.2c-1.9-2.8-2.1-5.4-0.7-7.7c-1.5,0.4-2.8,0.2-4-0.5c-1.1-0.7-2.2-1.8-3.2-3.2L68.3,48        c-0.5-0.7-0.9-1.3-1.3-1.7c-0.4-0.5-0.9-0.9-1.5-1.3L70.6,41.6z M91.7,61.8L86,53.3l-1.9,1.3c-0.9,0.6-1.5,1.3-1.7,2        c-0.2,0.8,0,1.7,0.8,2.8l1.8,2.7c0.7,1,1.4,1.6,2,1.8c0.7,0.2,1.5,0,2.3-0.6L91.7,61.8z"></path>
+            <path class="st0" d="M36.8,77.7l3.4-4.7l5.5,2.7l4.1-5.7l-4.3-4.3l3.1-4.3l23.7,24.1l-4.9,6.9L36.8,77.7z M53,73.2l-3.2,4.5        l15.3,7.5L53,73.2z"></path>
+            <path class="st0" d="M48.5,111.2l-23.3-6.1l1.3-5l32.2,8.4l-1.8,7l-20.8,0.7l19.3,5l-1.3,5l-32.2-8.4l1.5-5.7L48.5,111.2z"></path>
+            <path class="st0" d="M53.2,139.6l0.9,9.1c0.3,2.9-0.2,5.1-1.4,6.6s-3.2,2.5-5.9,2.7L30,159.7c-2.7,0.3-4.8-0.2-6.3-1.5        s-2.4-3.3-2.7-6.2l-0.9-9.1L53.2,139.6z M49,145.8l-23.6,2.4l0.3,3.2c0.1,0.9,0.4,1.6,0.9,2.1s1.4,0.6,2.6,0.5l17.2-1.8        c1.2-0.1,2-0.5,2.4-1c0.4-0.6,0.6-1.3,0.5-2.2L49,145.8z"></path>
+            <path class="st0" d="M59.3,170.3l2.2,5.3l-30.6,13l-2.3-5.3L59.3,170.3z"></path>
+            <path class="st0" d="M64.4,198L46,213.5l-3.3-4l25.5-21.4l4.6,5.5L61.3,211l15.2-12.8l3.3,3.9l-25.5,21.4l-3.8-4.5L64.4,198z"></path>
+            <path class="st0" d="M90.8,227.7l7,4l-5.2,9.2c-1.3,2.3-3,3.8-4.9,4.3c-2,0.5-4.2,0.1-6.6-1.3c-2.5-1.4-4-3.1-4.5-5        c-0.6-2-0.2-4.1,1.2-6.5l8.5-15.1c1.3-2.3,3-3.8,4.9-4.3c2-0.5,4.2-0.1,6.6,1.3c2.5,1.4,4,3.1,4.5,5c0.6,2,0.2,4.1-1.2,6.5        l-1.6,2.8l-4.7-2.7l1.8-3.1c0.6-1.1,0.8-1.9,0.5-2.6c-0.2-0.7-0.7-1.3-1.5-1.7s-1.5-0.6-2.3-0.4c-0.7,0.2-1.4,0.8-2,1.8l-8.8,15.7        c-0.6,1.1-0.8,1.9-0.5,2.6c0.2,0.7,0.8,1.2,1.5,1.7c0.8,0.4,1.5,0.6,2.2,0.4c0.7-0.2,1.4-0.8,1.9-1.8l3-5.3l-2.3-1.3L90.8,227.7z"></path>
+            <path class="st0" d="M119.7,237.8l-1.2,4.9l-5.4-1.3l1.2-4.9L119.7,237.8z"></path>
+          </g>
+        </g>
+      </svg>
+    </div>
+    <div class="site">
+      <div class="site-top">
+        <header>
+          <div class="mobile-menu-btn d-none-desktop"></div>
+          <div class="container header-container"><a class="main-btn" href="">Скачать презентацию</a><a class="header-logo" href=""><img src="./assets/img/logo.png"></a><a class="header-tel" href="tel:+38 098 823 43 43">38 098 823 43 43</a></div>
+        </header>
+        <main class="main">
+          <div class="container mobile-menu mobile-menu-hide-4 hide d-none-desktop">
+            <div class="menu-top"><a class="main-btn" href="">Скачать презентацию</a><a class="main-btn" href="">Заполнить чек-лист</a>
+              <p>Мы базируемся в городе Днепр, Украина, к нам можно дозвониться по номеру</p><a class="menu-tel" href="380988234343">38 098 823 43 43</a>
+              <p>или прислать письмо на</p><a class="menu-tel" href="mailto:brand@posh.pro">brand@posh.pro</a>
+            </div>
+            <div class="menu-bottom"><a class="main-btn" href="">Наш основной сайт</a>
+              <div class="soc-block"><a href="">facebook</a><a href="">pinterest</a><a href="">behance</a><a href="">instagram</a></div>
+            </div>
+          </div>
+          <section class="banner-section">
+            <div class="container banner-container container-small titles-container">
+              <div class="flex-50 mobile-menu-hide-1">
+                <h1>Разрабатываем fmcg бренды</h1>
+              </div>
+              <div class="flex-50 mobile-menu-hide-2">
+                <h3><span class="txt-rotate" data-period="2000" data-rotate='["Вывод продукта на рынок"]' > < /span></h3>
+              </div>
+            </div>
+            <div class="container banner-container container-small mobile-menu-hide-3">
+              <div class="banner-blocks">
+                <div class="banner-block">
+                  <div class="digit">10</div>
+                  <div class="text">лет продуктивной<br>работы в отрасли</div>
+                </div>
+                <div class="banner-block">
+                  <div class="digit">5</div>
+                  <div class="text">национальных<br>ритейлеров</div>
+                </div>
+                <div class="banner-block">
+                  <div class="digit">300</div>
+                  <div class="text">реальных кейсов<br>на полках</div>
+                  <div class="mobile-btn-down d-none-desktop"></div>
+                </div>
+              </div>
+            </div>
+            <div class="container banner-container d-flex justify-content-center container-small bottom-banner-container">
+              <h3>Наши кейсы</h3>
+            </div>
+            <div class="background-parallax" id="scene">
+              <div class="position-releative background-parallax-inner" data-depth="0.2">
+                <div class="background-img"></div>
+              </div>
+            </div>
+          </section>
+          <section>
+            <div class="container container-small products-card-container products-card-container-indent">
+              <div class="product-card animate__animated" style="background-color: #c7ec52" data-aos="animate__backInUp">
+                <div class="product-card-img animate__animated" data-aos="slide-in-bck-center"><img src="./assets/img/product-1.png"></div>
+                <div class="product-title">Новый бренд для<br>фруктовых чипсов</div>
+              </div>
+              <div class="product-card animate__animated" style="background-color: #ff97b7" data-aos="animate__backInUp">
+                <div class="product-card-img animate__animated" data-aos="slide-in-bck-center"><img src="./assets/img/product-2.png"></div>
+                <div class="product-title">Линейка мороженого<br>под СТМ NOVUS</div>
+              </div>
+              <div class="product-card animate__animated" style="background-color: #69e8b7" data-aos="animate__backInUp">
+                <div class="product-card-img animate__animated" data-aos="slide-in-bck-center"><img src="./assets/img/product-3.png"></div>
+                <div class="product-title">Линейка джемов<br>для СТМ NOVUS</div>
+              </div>
+              <div class="product-card animate__animated" style="background-color: #a8d6e1" data-aos="animate__backInUp">
+                <div class="product-card-img animate__animated" data-aos="slide-in-bck-center"><img src="./assets/img/product-4.png"></div>
+                <div class="product-title">Дизайн упаковки для<br>вареников Своя Линия</div>
+              </div>
+            </div>
+            <div class="container container-small products-card-container hidden-products">
+              <div class="product-card animate__animated" style="background-color: #abcc56" data-aos="animate__backInUp">
+                <div class="product-card-img animate__animated" data-aos="slide-in-bck-center"><img src="./assets/img/product-5.png"></div>
+                <div class="product-title">Дизайн для сладкого и<br>натурального бренда STEVIA</div>
+              </div>
+              <div class="product-card animate__animated" style="background-color: #fedea9" data-aos="animate__backInUp">
+                <div class="product-card-img animate__animated" data-aos="slide-in-bck-center"><img src="./assets/img/product-6.png"></div>
+                <div class="product-title">Бренд для новых<br>овсяных хлопьев OTTI</div>
+              </div>
+              <div class="product-card animate__animated" style="background-color: #85d1f5" data-aos="animate__backInUp">
+                <div class="product-card-img animate__animated" data-aos="slide-in-bck-center"><img src="./assets/img/product-7.png"></div>
+                <div class="product-title">Капсулы для стирки<br>START POWERCAPS</div>
+              </div>
+              <div class="product-card animate__animated" style="background-color: #ffd2ad" data-aos="animate__backInUp">
+                <div class="product-card-img animate__animated" data-aos="slide-in-bck-center"><img src="./assets/img/product-8.png"></div>
+                <div class="product-title">Брендинг для NOVUS<br>The Lunch ASIA</div>
+              </div>
+            </div>
+            <div class="container container-small products-card-container hidden-products">
+              <div class="product-card animate__animated" style="background-color: #ffe48f" data-aos="animate__backInUp">
+                <div class="product-card-img animate__animated" data-aos="slide-in-bck-center"><img src="./assets/img/product-9.png"></div>
+                <div class="product-title">Упаковка для растворимого<br>кофе Своя Линия</div>
+              </div>
+              <div class="product-card animate__animated" style="background-color: #ff90a2" data-aos="animate__backInUp">
+                <div class="product-card-img animate__animated" data-aos="slide-in-bck-center"><img src="./assets/img/product-10.png"></div>
+                <div class="product-title">Таблетки для мытья<br>посуды START</div>
+              </div>
+              <div class="product-card animate__animated" style="background-color: #e3a6ff" data-aos="animate__backInUp">
+                <div class="product-card-img animate__animated" data-aos="slide-in-bck-center"><img src="./assets/img/product-11.png"></div>
+                <div class="product-title">Слабоалкогольные<br>Wine Based коктейли</div>
+              </div>
+              <div class="product-card animate__animated" style="background-color: #fad4e2" data-aos="animate__backInUp">
+                <div class="product-card-img animate__animated" data-aos="slide-in-bck-center"><img src="./assets/img/product-12.png"></div>
+                <div class="product-title">Серия летних<br>вин для Коктебель</div>
+              </div>
+            </div>
+            <div class="container container-small products-card-container hidden-products">
+              <div class="product-card animate__animated" style="background-color: #5db8ff" data-aos="animate__backInUp">
+                <div class="product-card-img animate__animated" data-aos="slide-in-bck-center"><img src="./assets/img/product-13.png"></div>
+                <div class="product-title">Молочная продукция<br>под СТМ Своя Линия</div>
+              </div>
+              <div class="product-card animate__animated" style="background-color: #ea88bd" data-aos="animate__backInUp">
+                <div class="product-card-img animate__animated" data-aos="slide-in-bck-center"><img src="./assets/img/product-14.png"></div>
+                <div class="product-title">Новый бренд<br>мороженого LODI</div>
+              </div>
+              <div class="product-card animate__animated" style="background-color: #9dd9cd" data-aos="animate__backInUp">
+                <div class="product-card-img animate__animated" data-aos="slide-in-bck-center"><img src="./assets/img/product-15.png"></div>
+                <div class="product-title">Упаковка для дентальных<br>имплантатов Bauer's Implants</div>
+              </div>
+              <div class="product-card animate__animated" style="background-color: #ffbd67" data-aos="animate__backInUp">
+                <div class="product-card-img animate__animated" data-aos="slide-in-bck-center"><img src="./assets/img/product-16.png"></div>
+                <div class="product-title">Дизайн упаковки<br>для зефира Своя Линия</div>
+              </div>
+            </div>
+            <div class="container container-small products-card-container hidden-products">
+              <div class="product-card animate__animated" style="background-color: #53caab" data-aos="animate__backInUp">
+                <div class="product-card-img animate__animated" data-aos="slide-in-bck-center"><img src="./assets/img/product-17.png"></div>
+                <div class="product-title">Упаковки под коллаборацию<br>Varus и Клопотенко</div>
+              </div>
+              <div class="product-card animate__animated" style="background-color: #c685ff" data-aos="animate__backInUp">
+                <div class="product-card-img animate__animated" data-aos="slide-in-bck-center"><img src="./assets/img/product-18.png"></div>
+                <div class="product-title">Линейка хумусов<br>для бренда Gurman</div>
+              </div>
+              <div class="product-card animate__animated" style="background-color: #96fd63" data-aos="animate__backInUp">
+                <div class="product-card-img animate__animated" data-aos="slide-in-bck-center"><img src="./assets/img/product-19.png"></div>
+                <div class="product-title">Новый супер бренд<br>мороженого IZI</div>
+              </div>
+              <div class="product-card animate__animated" style="background-color: #cbe2f4" data-aos="animate__backInUp">
+                <div class="product-card-img animate__animated" data-aos="slide-in-bck-center"><img src="./assets/img/product-20.png"></div>
+                <div class="product-title">Кондиционеры<br>стирки Своя Линия</div>
+              </div>
+            </div>
+            <div class="container container-small products-card-container hidden-products">
+              <div class="product-card animate__animated" style="background-color: #abcc56" data-aos="animate__backInUp">
+                <div class="product-card-img animate__animated" data-aos="slide-in-bck-center"><img src="./assets/img/product-21.png"></div>
+                <div class="product-title">Дизайн для сладкого и<br>натурального бренда STEVIA</div>
+              </div>
+              <div class="product-card animate__animated" style="background-color: #a187e6" data-aos="animate__backInUp">
+                <div class="product-card-img animate__animated" data-aos="slide-in-bck-center"><img src="./assets/img/product-22.png"></div>
+                <div class="product-title">Дизайн стратегия для<br>бренда мороженого HYPE</div>
+              </div>
+              <div class="product-card animate__animated" style="background-color: #ce7a99" data-aos="animate__backInUp">
+                <div class="product-card-img animate__animated" data-aos="slide-in-bck-center"><img src="./assets/img/product-23.png"></div>
+                <div class="product-title">Дизайн для линейки<br>мороженого GelAmo</div>
+              </div>
+            </div>
+            <div class="container container-small text-center more-product">
+              <div class="main-btn width-btn more-product-btn">Больше работ</div>
+            </div>
+          </section>
+          <section class="section-top-indent products-container-indent">
+            <div class="container container-small video-block-container">
+              <div class="video-block video-block-bottom-indent">
+                <div class="video-wrap">
+                  <video class="video-autoplay" src="./assets/img/videos/bottles_1.mp4" muted="muted"></video>
+                </div>
+                <div class="text-block">
+                  <h3 class="animate__animated" data-aos="animate__fadeInUp">Основная проблема</h3>
+                  <p class="animate__animated" data-aos="animate__fadeInUp">Нам хорошо известно, что производитель ставит в приоритет, находясь на этапе запуска нового продукта.</p>
+                  <p class="animate__animated" data-aos="animate__fadeInUp">Это бесконечный перечень дел, состоящий из сроков, себестоимости,  отладки технических процессов...</p>
+                  <p class="animate__animated" data-aos="animate__fadeInUp">Список можно продолжать. Но часто в такой гонке он забывает о главном: все это может остаться недооцененным, если правильно не презентовать продукт окружающим.</p>
+                </div>
+              </div>
+              <div class="container container-small text-center">
+                <h2 class="text-mobile-left typing-title"><span class="txt-rotate" data-period="2000" data-rotate='["Ваш продукт интересен только Вам!"]' > < /span></h2>
+              </div>
+              <div class="video-block section-bottom-indent video-block-top-indent-mobile">
+                <div class="video-wrap">
+                  <video class="video-autoplay" src="./assets/img/videos/girl_1.mp4" muted="muted"></video>
+                </div>
+                <div class="text-block">
+                  <h3 class="animate__animated" data-aos="animate__fadeInUp">Цель - убедить ВСЕХ!</h3>
+                  <p class="animate__animated" data-aos="animate__fadeInUp">Всё начинается с отдела сбыта. Менеджеры обязаны не просто продавать ваш продукт, но понимать и нести с собой его идею и ценность. В свою очередь ритейлеры и дистрибьюторы должны поверить в его ликвидность.</p>
+                  <p class="animate__animated" data-aos="animate__fadeInUp">А чтобы стать релевантным для конечного потребителя, ваш продукт вынужден предугадать его мотивы и ожидания.</p>
+                </div>
+              </div>
+            </div>
+          </section>
+          <section>
+            <div class="container container-text-small text-center text-mobile-left">
+              <h2>Эффективная упаковка</h2>
+              <p>Это не только оболочка, защищающая продукт. Это тщательно проработанный комплекс инструментов бренда, чья единственная цель - транслировать его идею и позиционирование окружающим.</p>
+            </div>
+          </section>
+          <section class="section-top-indent overflow-hidden">
+            <div class="container d-flex justify-content-between flex-nowrap align-items-center justify-content-desktop-center">
+              <h2 class="text-mobile-left">Основная специализация</h2>
+              <div class="right-arrow advantages-slider-next d-none-desktop"></div>
+            </div>
+            <div class="container container-small">
+              <div class="swiper-container advantages-slider-init">
+                <div class="swiper-wrapper directions-container">
+                  <div class="swiper-slide">
+                    <div class="directions-item" style="background-color: #00d38d; background-image: url('./assets/img/direction-1.png')">
+                      <div class="direction-text">
+                        <div class="direction-title">Стратегия И дизайн бренда</div>
+                        <ul>
+                          <li>раскрытие преимуществ, формирование ценности</li>
+                          <li>позиционирование и концепция бренда</li>
+                          <li>дизайн стратегия идентичности бренда</li>
+                          <li>копирайт и сторитейлинг</li>
+                        </ul>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="swiper-slide">
+                    <div class="directions-item" style="background-color: #ff837e; background-image: url('./assets/img/direction-2.png')">
+                      <div class="direction-text">
+                        <div class="direction-title">Техническая поддержка проекта</div>
+                        <ul>
+                          <li>дизайн упаковки и разгон линеек</li>
+                          <li>верстка, маркировка, корректирование</li>
+                          <li>допечатная подготовка и составления ТЗ</li>
+                          <li>подбор типографий и авторский надзор</li>
+                        </ul>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="swiper-slide">
+                    <div class="directions-item" style="background-color: #00c1ff; background-image: url('./assets/img/direction-3.png')">
+                      <div class="direction-text">
+                        <div class="direction-title">ВЫВОД ПРОДУКТА на рынок</div>
+                        <ul>
+                          <li>презентационные материалы и скрипты</li>
+                          <li>таргетирование бренда и привлечение внимания</li>
+                          <li>оснащение и подготовка менеджеров</li>
+                          <li>сопровождение вывода продукта на рынок</li>
+                        </ul>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </section>
+          <section class="section-top-indent">
+            <div class="container container-small video-block-container">
+              <div class="video-block video-block-bottom-indent">
+                <div class="video-wrap">
+                  <video class="video-autoplay" src="./assets/img/videos/office_1.mp4" muted="muted"></video>
+                </div>
+                <div class="text-block">
+                  <h3 class="animate__animated" data-aos="animate__fadeInUp">Наш подход -</h3>
+                  <p class="animate__animated" data-aos="animate__fadeInUp">дать не просто дизайн, а упаковка ваш проект так что бы ни у кого не осталось вопросов и сомнений, только уверенность и четкое понимание дальнейших действий</p>
+                </div>
+              </div>
+            </div>
+          </section>
+          <section>
+            <div class="container container-small">
+              <div class="brands-title text-center text-mobile-left text-mobile-nowrap">Именно поэтому с нами работают:</div>
+            </div>
+            <div class="container container-small brands-container">
+              <div class="brand animate__animated" data-aos="animate__fadeInUp"><img src="./assets/img/brand-1.png"></div>
+              <div class="brand animate__animated" data-aos="animate__fadeInUp"><img src="./assets/img/brand-2.png"></div>
+              <div class="brand animate__animated" data-aos="animate__fadeInUp"><img src="./assets/img/brand-3.png"></div>
+              <div class="brand animate__animated" data-aos="animate__fadeInUp"><img src="./assets/img/brand-4.png"></div>
+              <div class="brand animate__animated" data-aos="animate__fadeInUp"><img src="./assets/img/brand-5.png"></div>
+              <div class="brand animate__animated" data-aos="animate__fadeInUp"><img src="./assets/img/brand-6.png"></div>
+              <div class="brand animate__animated" data-aos="animate__fadeInUp"><img src="./assets/img/brand-7.png"></div>
+              <div class="brand animate__animated" data-aos="animate__fadeInUp"><img src="./assets/img/brand-8.png"></div>
+              <div class="brand animate__animated" data-aos="animate__fadeInUp"><img src="./assets/img/brand-9.png"></div>
+              <div class="brand animate__animated" data-aos="animate__fadeInUp"><img src="./assets/img/brand-10.png"></div>
+              <div class="brand animate__animated" data-aos="animate__fadeInUp"><img src="./assets/img/brand-11.png"></div>
+              <div class="brand animate__animated" data-aos="animate__fadeInUp"><img src="./assets/img/brand-12.png"></div>
+            </div>
+          </section>
+          <section>
+            <div class="container thanks-container">
+              <div class="thanks-block">
+                <h3 class="animate__animated" data-aos="animate__fadeInUp">Спасибо!</h3>
+                <p class="animate__animated" data-aos="animate__fadeInUp">Итак, если Вы дочитали до конца, спасибо. Видимо Вам интересно то, чем мы занимаемся. Познакомимся ближе? Вы можете рассказать нам о своем продукте и целях проекта, а мы в свою очередь предложим план действий по осуществлению задуманного.</p>
+              </div>
+              <div class="thanks-block-btns"><a class="main-btn" href="">Заполнить чек-лист</a><a class="main-btn" href="">Получить консультацию</a></div>
+            </div>
+          </section>
+          <section class="section-top-indent overflow-hidden">
+            <div class="container d-flex justify-content-between flex-nowrap align-items-center">
+              <h2>Наши кейсы на полках</h2>
+              <div class="right-arrow products-slider-next"></div>
+            </div>
+            <div class="container video-block-bottom-indent">
+              <div class="swiper-container products-slider products-slider-init">
+                <div class="swiper-wrapper d-flex flex-nowrap">
+                  <div class="swiper-slide">
+                    <div class="product-item">
+                      <div class="product-img"><img src="./assets/img/product-item-1.png"></div>
+                      <p>Серия водки Medoff City. VARUS</p>
+                    </div>
+                  </div>
+                  <div class="swiper-slide">
+                    <div class="product-item">
+                      <div class="product-img"><img src="./assets/img/product-item-2.png"></div>
+                      <p>Чай Belforto. РОСТ</p>
+                    </div>
+                  </div>
+                  <div class="swiper-slide">
+                    <div class="product-item">
+                      <div class="product-img"><img src="./assets/img/product-item-3.png"></div>
+                      <p>Чипсы Frips. WOG</p>
+                    </div>
+                  </div>
+                  <div class="swiper-slide">
+                    <div class="product-item">
+                      <div class="product-img"><img src="./assets/img/product-item-4.png"></div>
+                      <p>Конфеты Своя Линия. АТБ</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="container subscribe-container">
+              <div class="subscribe-block">
+                <p>В нашем instagram мы регулярно публикуем новые кейсы поступившие на полки магазинов</p><a class="main-btn" href="">
+                  <div class="inst-btn"></div>Подписаться</a>
+              </div>
+              <div class="subscribe-block">
+                <p>Или посетите наш основной сайт, на котором мы более подробно  расскажем как построена наша работа</p><a class="main-btn" href="">Наш основной сайт</a>
+              </div>
+              <div class="subscribe-block d-none-mobile">
+                <div></div><a class="main-btn" href="">Скачать презентацию</a>
+              </div>
+            </div>
+          </section>
+          <section class="section-top-indent">
+            <div class="container">
+              <h2>Частые вопросы</h2>
+            </div>
+            <div class="container accordion faq-block">
+              <div>
+                <details class="details">
+                  <summary class="summary">
+                    <div class="accordion-btn"></div>
+                    <div class="title">Вы печатаете упаковку или этикетку?</div>
+                  </summary>
+                  <div class="content">
+                    <p>Нет, но всё намного интереснее... Мы придумываем, как её воплотить в жизнь. Как упаковка должна выглядеть в живую, какая должна быть на ощупь, какие использовать материалы, краски и декорирующие приемы. Мы также подбираем типографию, которой под силу осуществить задуманную концепцию, связываемся с ней и контролируем процесс реализации плана.</p>
+                  </div>
+                </details>
+                <details class="details">
+                  <summary class="summary">
+                    <div class="accordion-btn"></div>
+                    <div class="title">Макет уже есть, можете в него просто внести изменения?</div>
+                  </summary>
+                  <div class="content">
+                    <p>Все зависит от того, насколько Ваш бренд интересный, как сделан макет и какого уровня сложности изменения. Сделать можно всё, было бы время ;)</p>
+                  </div>
+                </details>
+                <details class="details">
+                  <summary class="summary">
+                    <div class="accordion-btn"></div>
+                    <div class="title">Вы можете разработать логотип и брендбук?</div>
+                  </summary>
+                  <div class="content">
+                    <p>Логотип мы разрабатываем только в рамках разработки целостной дизайн-стратегии бренда.</p>
+                    <p>Брендбук мы делаем, если компания действительно созрела и в нем нуждается. Прежде, чем заказать брендбук, стоит ответить себе на вопросы: "Зачем он нам нужен?" и "Мы знаем, как им пользоваться?".</p>
+                  </div>
+                </details>
+              </div>
+              <div>
+                <details class="details">
+                  <summary class="summary">
+                    <div class="accordion-btn"></div>
+                    <div class="title">А что, если нам не понравится результат?</div>
+                  </summary>
+                  <div class="content">
+                    <p>Исключено! Мы делим проект на несколько этапов. Каждый этап направлен на изучение предпочтений: как Ваших, так и потенциальных покупателей. По итогу Вы получаете несколько объективных концепций, построенных на выявленных предпочтениях и тенденциях в Вашей нише.</p>
+                  </div>
+                </details>
+                <details class="details">
+                  <summary class="summary">
+                    <div class="accordion-btn"></div>
+                    <div class="title">Как формируется цена?</div>
+                  </summary>
+                  <div class="content">
+                    <p>У нас максимально прозрачные условия. Цены фиксированы и для всех одинаковы. На интересные, объёмные или долгосрочные проекты существуют специальные условия, которые сохраняются для постоянных клиентов.</p>
+                  </div>
+                </details>
+                <details class="details">
+                  <summary class="summary">
+                    <div class="accordion-btn"></div>
+                    <div class="title">Сколько специалистов работает над проектом?</div>
+                  </summary>
+                  <div class="content">
+                    <p>Самый простой проект ведут 2-3 специалиста. Сложные, которые подразумевают комплексное сопровождение, вплоть до внедрения на рынок, от 4 до 10 человек, в зависимости от потребностей утвержденной стратегии.</p>
+                  </div>
+                </details>
+                <details class="details">
+                  <summary class="summary">
+                    <div class="accordion-btn"></div>
+                    <div class="title">Какие сроки реализации?</div>
+                  </summary>
+                  <div class="content">
+                    <p>Результат нашей работы вы увидите уже в течение 14 дней. Но упакованный продукт на склад, как показывает практика, вы получите не раньше, чем через месяц, а то и два. На сроки влияет много факторов: лалала</p>
+                  </div>
+                </details>
+              </div>
+              <div>
+                <details class="details">
+                  <summary class="summary">
+                    <div class="accordion-btn"></div>
+                    <div class="title">Нужно составлять техническое задание?</div>
+                  </summary>
+                  <div class="content">
+                    <p>Нет, потому что результат нашего с Вами брифинга - уже достаточное техническое задание. Лучшее техническое задание от Вас - это открытое общение. Со своей стороны, мы стараемся максимально понять Вас, Вашу потребность и продукт, на основании чего мы сами себе формируем ТЗ.</p>
+                  </div>
+                </details>
+                <details class="details">
+                  <summary class="summary">
+                    <div class="accordion-btn"></div>
+                    <div class="title">Мы только запускаем продукт, нам нужны ваши услуги/ваши услуги дорогие для нас?</div>
+                  </summary>
+                  <div class="content">
+                    <p>Залог успешного развития бизнеса и продукта, который будет продаваться - надежный фундамент. Мы с удовольствием работаем с молодыми бизнесами, делимся опытами, вместе с вами закладываем прочную основу будущего бренда. Вы уже проделали огромную работу: идея, производство, бизнес-план... потеряла мысль.</p>
+                  </div>
+                </details>
+                <details class="details">
+                  <summary class="summary">
+                    <div class="accordion-btn"></div>
+                    <div class="title">Что такое позиционирование?</div>
+                  </summary>
+                  <div class="content">
+                    <p>Простыми словами - архетип. От того, каким характером и какими свойствами мы снабдим бренд, зависит то, как люди буду его воспринимать. Эмоция, качество, стоимость, предыстория и результат, должны соответствовать позиционированию.</p>
+                  </div>
+                </details>
+              </div>
+            </div>
+          </section>
+        </main>
+      </div>
+      <div class="site-bottom">
+        <footer>
+          <div class="container footer-container">
+            <div class="footer-block"><a class="footer-logo d-none-mobile" href=""><img src="./assets/img/logo-footer.png"></a><a class="footer-tel" href="tel:+38 098 823 43 43">38 098 823 43 43</a><a class="main-btn d-none-desktop" href="">Скачать презентацию</a><a class="main-btn d-none-desktop" href="">Заполнить чек-лист</a></div>
+            <div class="footer-block-btn"><a class="main-btn" href="">Заполнить чек-лист</a></div>
+          </div>
+          <div class="container d-flex justify-content-center d-none-desktop"><a class="footer-logo" href=""><img src="./assets/img/logo-footer.png"></a></div>
+          <div class="container footer-bottom-container">
+            <div class="d-flex">
+              <div class="privacy-policy-text"><span>© Copyright 2021 posh</span><span>fmcg branding</span></div><a class="privacy-policy" href="">Privacy policy</a>
+            </div>
+            <div class="soc-block"><a href="">facebook</a><a href="">pinterest</a><a href="">behance</a><a href="">instagram</a></div>
+          </div>
+        </footer>
+      </div>
+    </div>
+    <script src="./assets/js/main.js"></script>
+  </body>
+</html>
