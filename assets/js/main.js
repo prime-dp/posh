@@ -312,7 +312,10 @@ $(".mobile-menu-btn").on("click",  () => {
 
 document.querySelector(".more-product-btn").onclick = () => {
     document.querySelector('.hidden-products') ? document.querySelector('.hidden-products').classList.remove('hidden-products') : false
-    !document.querySelector('.hidden-products') ? document.querySelector('.more-product').innerHTML = "" : false
+    if(!document.querySelector('.hidden-products')) {
+        document.querySelector('.more-product').innerHTML = ""
+        document.querySelector('.product-btn-container').classList.remove("d-none")
+    }
 }
 
 AOS.init({
